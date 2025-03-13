@@ -1,37 +1,12 @@
 #include <stdio.h>
 
-// for loop 
-int main() {
-    for (int i = 1; i <= 5; i++) {
-        printf("%d ", i);
+int main(){
+    for ( int i =0; i < 8; i++){ // i = 0
+        for (int j = i+1; j < 8; j+=3) { // i = 0; j = 4
+            if (i +j == 7){// i +j = 4 no
+                break;
+            }
+        printf("i = %d, j = %d\n", i, j);
+        }
     }
-    printf("\n");
-    return 0;
-}
-
-
-
-// while loop 
-int main() {
-    int i = 1;
-    while (i <= 5) {
-        printf("%d ", i);
-        i++;
-    }
-    printf("\n");
-    return 0;
-}
-
-
-// recursion
-
-int factorial(int n) {
-    if (n == 0) return 1;
-    return n * factorial(n - 1);
-}
-
-int main() {
-    int n = 5;
-    printf("Factorial of %d is %d\n", n, factorial(n));
-    return 0;
 }
