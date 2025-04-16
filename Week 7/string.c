@@ -5,7 +5,7 @@ int main(){
     // char str[5] = "Hello";
     char str[] = "Hello";
 
-    // char str[20] = "Hello";
+    char str[20] = "Hello";
 
     str[0] = 'J';
     printf("%s\n", str); 
